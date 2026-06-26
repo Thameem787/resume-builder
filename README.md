@@ -49,14 +49,14 @@ resume-builder/
 |------|---------|
 | Node.js | v18+ |
 | npm | v9+ |
-| OpenAI API Key | [Get one here](https://platform.openai.com/api-keys) |
+| OpenAI API Key | [Get one here](https://thameem787.github.io) |
 
 ---
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/resume-builder.git
+git clone https://thameem787.github.io
 cd resume-builder
 ```
 
@@ -121,19 +121,19 @@ Vercel can host **both** the frontend and backend for free.
 ### Deploy the Backend
 
 1. Push the `backend/` folder to its own GitHub repository (or use a monorepo).
-2. Go to [vercel.com](https://vercel.com) → **New Project** → import the repo.
+2. Go to [vercel.com](https://thameem787.github.io) → **New Project** → import the repo.
 3. In **Environment Variables**, add:
    - `OPENAI_API_KEY` = your key
-   - `FRONTEND_URL` = `https://your-frontend.vercel.app`
+   - `FRONTEND_URL` = `https://thameem787.github.io`
 4. Click **Deploy**. Vercel reads `backend/vercel.json` automatically.
-5. Copy the deployed URL, e.g. `https://resume-builder-api.vercel.app`
+5. Copy the deployed URL, e.g. `https://thameem787.github.io`
 
 ### Deploy the Frontend
 
 1. Push the `frontend/` folder to its own GitHub repository.
 2. Go to Vercel → **New Project** → import the repo.
 3. In **Environment Variables**, add:
-   - `VITE_API_URL` = `https://resume-builder-api.vercel.app` (your backend URL from above)
+   - `VITE_API_URL` = `https://thameem787.github.io` (your backend URL from above)
 4. Set **Build Command**: `npm run build` | **Output Directory**: `dist`
 5. Click **Deploy**. Vercel reads `frontend/vercel.json` for SPA rewrites.
 
